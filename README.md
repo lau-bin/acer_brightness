@@ -26,7 +26,7 @@ Use at your own risk! Acer was not involved in developing this driver, and every
 ### Requirements 
 1. Install Linux headers and build tools using your distro package manager: Ubuntu (or other Debian based distros):
 sudo apt install -y build-essential linux-headers-$(uname -r) gcc make
-2. If you use secure boot you need to have your custom MOK.der and MOK.prov to sign the module whose generation is outside this guide
+2. If you use secure boot you need to have your custom MOK.der and MOK.priv to sign the module whose generation is outside this guide
 
 ### Instructions
 1. Clone the repo and cd into the root dir
