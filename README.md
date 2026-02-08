@@ -4,6 +4,9 @@
 * Customizable attenuation of keyboard light
 * Customizable timer to turn it off after a key press
 
+## Warning
+Use at your own risk! Acer was not involved in developing this driver, and everything is developed by reverse engineering the official Predator Sense app. This driver interacts with low-level WMI methods that haven't been tested on all series.
+
 ## Extra features are welcome but the scope of the module must remain about keyboard lightning.
 
 ## Credits
