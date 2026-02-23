@@ -60,11 +60,15 @@ sudo modprobe -r acer_brightness
     sudo cp <acer_brightness.ko full path> \
       /lib/modules/$(uname -r)/extra/acer_brightness.ko
     ```
-5. Enable the module:
+5. Run:
+```bash
+sudo depmod -a
+```
+7. Enable the module:
 ```bash
 sudo modprobe acer_brightness
 ```
-6. Verify log errors:
+7. Verify log errors:
     1. Using journalctl:
     ```bash
     sudo journalctl -b --no-pager | grep -iE 'acer_brigh|modprobe|module'
@@ -73,7 +77,7 @@ sudo modprobe acer_brightness
     ```bash
     sudo dmesg | tail -n 20
     ```
-7. If it works without issues, create a `.conf` to load it on startup:
+8. If it works without issues, create a `.conf` to load it on startup:
 ```bash
 echo acer_brightness | sudo tee /etc/modules-load.d/acer_brightness.conf
 ```
